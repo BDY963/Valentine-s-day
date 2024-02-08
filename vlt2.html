@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Will you be my valentine? </title>
+<style>
+.centerImage{
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 100px;
+margin-bottom: auto;
+border-radius: 10px;
+}
+</style>
+    </head>
+        <body style="background-color: darkred;">
+            <img src="hug-hugs-and-love.gif" class="centerImage" width="360" height="250">
+            <h2 style="text-align: center; color: lavender;"><i>IUPIIIIIIIIII❤️❤️❤️</i></h2>
+            <h1 style="text-align: center; font-size: 30px; color: cyan;">🥰NE VEDEM IN🥰</h1>
+            <style>
+                p {
+                  text-align: center;
+                  font-size: 60px;
+                  margin-top: 0px;
+                  color: antiquewhite;
+                }
+            </style>
+        <body>
+                
+            <p id="demo"></p>
+                
+                <script>
+                var countDownDate = new Date("Feb 14, 2024 00:00:00").getTime();
+                var x = setInterval(function() {
+                  var now = new Date().getTime();
+                    
+                  var distance = countDownDate - now;
+                    
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    
+                  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                  + minutes + "m " + seconds + "s ";
+                    
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "EXPIRED";
+                  }
+                }, 1000);
+                </script>
+                
+                </body>
+                </html>
